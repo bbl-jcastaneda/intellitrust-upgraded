@@ -9,5 +9,9 @@
 #ifndef BridgingHeader_h
 #define BridgingHeader_h
 
+#import "ETIdentity.h"
+#import "ETIdentityProvider.h"
+#import "ETSoftTokenSDK.h"
+#import "ETTransaction.h"
 
 #endif /* BridgingHeader_h */
