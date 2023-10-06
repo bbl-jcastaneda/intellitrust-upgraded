@@ -11,7 +11,7 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "IntellitrustUp.podspec"
+    "Intellitrust.podspec"
   ],
   "author": "Jahdiel C",
   "license": "MIT",
