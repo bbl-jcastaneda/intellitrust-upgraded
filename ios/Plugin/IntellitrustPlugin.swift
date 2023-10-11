@@ -18,7 +18,7 @@ public class IntellitrustPlugin: CAPPlugin {
         let fileName = ""
         @objc func echo(_ call: CAPPluginCall) {
             let value = call.getString("value") ?? ""
-            call.success([
+            call.resolve([
                 "value": value
             ])
         }
@@ -31,7 +31,7 @@ public class IntellitrustPlugin: CAPPlugin {
             
             if wasReset {
                 //Clean up any existing identities because we can't decrypt them
-                deleteIdentityFile()
+                _ = deleteIdentityFile()
             }
             ETSoftTokenSDK.setApplicationId("com.belizebank.mobile")
             ETSoftTokenSDK.setApplicationVersion("1.8.3")
@@ -44,7 +44,7 @@ public class IntellitrustPlugin: CAPPlugin {
                 try ETIdentityProvider.validateSerialNumber(serialNumber)
             }catch let error as NSError{
                  pluginResult = CAPPluginCallResult(["status": error, "message": error.localizedDescription ])
-                call.success([
+                call.resolve([
                     "sendPluginResult": pluginResult,
                     "callbackId": call.callbackId
                 ])
@@ -55,7 +55,7 @@ public class IntellitrustPlugin: CAPPlugin {
                 try ETIdentityProvider.validateActivationCode(activationCode)
             }catch let error as NSError{
                 pluginResult = CAPPluginCallResult(["status": error, "message": error.localizedDescription ])
-                call.success([
+                call.resolve([
                     "sendPluginResult": pluginResult,
                     "callbackId": call.callbackId
                 ])
@@ -64,19 +64,18 @@ public class IntellitrustPlugin: CAPPlugin {
             do{
                 //Create new Identity
                 let identity =  ETIdentityProvider.generate(deviceId, serialNumber: serialNumber, activationCode: activationCode)
-                var error : NSError?
                 let provider = ETIdentityProvider(urlString: transactionURL)
                 
                 let success = (try provider?.register(identity, deviceId: deviceId, transactions: true, onlineTransactions: true, offlineTransactions: true, notifications: true, callback: nil))!
-                saveIdentity(identity!)
+                _ = saveIdentity(identity!)
                 if success {
                     pluginResult = CAPPluginCallResult(["status": "OK", "message" : "Successfully Registered!"]) //need to validate if status returned is what is expected
-                    call.success([
+                    call.resolve([
                         "sendPluginResult": pluginResult,
                         "callbackId": call.callbackId
                     ])
                 }else{
-                    call.success([
+                    call.resolve([
                         "sendPluginResult": pluginResult,
                         "callbackId": call.callbackId
                     ])
@@ -84,7 +83,7 @@ public class IntellitrustPlugin: CAPPlugin {
                 
             }catch let error as NSError{
                 pluginResult = CAPPluginCallResult(["status": error, "message": error.localizedDescription ])
-                call.success([
+                call.resolve([
                     "sendPluginResult": pluginResult,
                     "callbackId": call.callbackId
                 ])
@@ -101,13 +100,13 @@ public class IntellitrustPlugin: CAPPlugin {
                 
                 let otp =  identity?.getOTP(Date())
                 pluginResult = CAPPluginCallResult(["status": "OK", "data": ["otp":otp]])
-                call.success([
+                call.resolve([
                     "sendPluginResult": pluginResult,
                     "callbackId": call.callbackId
                 ])
             }catch let error as NSError{
                 pluginResult = CAPPluginCallResult(["status": error, "message": error.localizedDescription ])
-                call.success([
+                call.resolve([
                     "sendPluginResult": pluginResult,
                     "callbackId": call.callbackId
                 ])
@@ -121,13 +120,13 @@ public class IntellitrustPlugin: CAPPlugin {
                 let filename =  call.getString("fileName")
                 _=deleteIdentityFile()
                 pluginResult = CAPPluginCallResult(["status": "OK", "message" : "Successfully Deleted!"])
-                call.success([
+                call.resolve([
                     "sendPluginResult": pluginResult,
                     "callbackId": call.callbackId
                 ])
             }catch let error as NSError{
                 pluginResult = CAPPluginCallResult(["status": error, "message": error.localizedDescription ])
-                call.success([
+                call.resolve([
                     "sendPluginResult": pluginResult,
                     "callbackId": call.callbackId
                 ])
@@ -160,13 +159,13 @@ public class IntellitrustPlugin: CAPPlugin {
                 
                 if isTransactionAuthenticated{
                     pluginResult = CAPPluginCallResult(["status": "OK", "message" : "true"])
-                    call.success([
+                    call.resolve([
                         "sendPluginResult": pluginResult,
                         "callbackId": call.callbackId
                     ])
                 }else{
                     pluginResult = CAPPluginCallResult(["status": "OK", "message" : "false"])
-                    call.success([
+                    call.resolve([
                         "sendPluginResult": pluginResult,
                         "callbackId": call.callbackId
                     ])
@@ -176,7 +175,7 @@ public class IntellitrustPlugin: CAPPlugin {
                 
             }catch let error as NSError{
                 pluginResult = CAPPluginCallResult(["status": error, "message": error.localizedDescription ])
-                call.success([
+                call.resolve([
                     "sendPluginResult": pluginResult,
                     "callbackId": call.callbackId
                 ])
