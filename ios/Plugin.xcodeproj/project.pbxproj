@@ -10,7 +10,6 @@
 		03FC29A292ACC40490383A1F /* Pods_Plugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2A61DA5A1F2DD4F959604D /* Pods_Plugin.framework */; };
 		20C0B05DCFC8E3958A738AF2 /* Pods_PluginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6753A823D3815DB436415E3 /* Pods_PluginTests.framework */; };
 		2F98D68224C9AAE500613A4C /* Intellitrust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F98D68124C9AAE400613A4C /* Intellitrust.swift */; };
-		4C01F95A2ACF5B2B00542999 /* libEntrustIGMobileSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01F9592ACF5B2B00542999 /* libEntrustIGMobileSDK.a */; };
 		4C01F9722ACF5CD400542999 /* include in Resources */ = {isa = PBXBuildFile; fileRef = 4C01F9712ACF5CD400542999 /* include */; };
 		4C01F9742ACF5D7000542999 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01F9732ACF5D7000542999 /* Security.framework */; };
 		4C01F9762ACF5D7D00542999 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01F9752ACF5D7D00542999 /* libz.tbd */; };
@@ -26,6 +25,8 @@
 		4C01F98A2ACF5E4300542999 /* ETIdentity.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C01F9802ACF5E4300542999 /* ETIdentity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C01F98D2ACF6B8C00542999 /* ETSoftTokenSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C01F98C2ACF6B8C00542999 /* ETSoftTokenSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C01F9922AD9E19A00542999 /* lib_iOS in Resources */ = {isa = PBXBuildFile; fileRef = 4C01F9912AD9E19A00542999 /* lib_iOS */; };
+		4C01F9942AD9E3DF00542999 /* libEntrustIGMobileSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01F9932AD9E3DF00542999 /* libEntrustIGMobileSDK.a */; };
+		4C01F9962AD9E3F000542999 /* libEntrustIGMobileSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01F9952AD9E3F000542999 /* libEntrustIGMobileSDK.a */; };
 		50ADFF92201F53D600D50D53 /* Plugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50ADFF88201F53D600D50D53 /* Plugin.framework */; };
 		50ADFF97201F53D600D50D53 /* IntellitrustTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFF96201F53D600D50D53 /* IntellitrustTests.swift */; };
 		50ADFF99201F53D600D50D53 /* IntellitrustPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ADFF8B201F53D600D50D53 /* IntellitrustPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -64,6 +65,8 @@
 		4C01F98C2ACF6B8C00542999 /* ETSoftTokenSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETSoftTokenSDK.h; sourceTree = "<group>"; };
 		4C01F98E2ACF6CA100542999 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		4C01F9912AD9E19A00542999 /* lib_iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib_iOS; path = Plugin/lib_iOS; sourceTree = "<group>"; };
+		4C01F9932AD9E3DF00542999 /* libEntrustIGMobileSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEntrustIGMobileSDK.a; path = Plugin/lib_iOS/Debug/libEntrustIGMobileSDK.a; sourceTree = "<group>"; };
+		4C01F9952AD9E3F000542999 /* libEntrustIGMobileSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEntrustIGMobileSDK.a; path = Plugin/lib_iOS/Release/libEntrustIGMobileSDK.a; sourceTree = "<group>"; };
 		50ADFF88201F53D600D50D53 /* Plugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Plugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50ADFF8B201F53D600D50D53 /* IntellitrustPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntellitrustPlugin.h; sourceTree = "<group>"; };
 		50ADFF8C201F53D600D50D53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,10 +88,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C01F9962AD9E3F000542999 /* libEntrustIGMobileSDK.a in Frameworks */,
+				4C01F9942AD9E3DF00542999 /* libEntrustIGMobileSDK.a in Frameworks */,
 				4C01F9762ACF5D7D00542999 /* libz.tbd in Frameworks */,
 				4C01F9742ACF5D7000542999 /* Security.framework in Frameworks */,
 				50ADFFA42020D75100D50D53 /* Capacitor.framework in Frameworks */,
-				4C01F95A2ACF5B2B00542999 /* libEntrustIGMobileSDK.a in Frameworks */,
 				03FC29A292ACC40490383A1F /* Pods_Plugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,6 +178,8 @@
 		A797B9EFA3DCEFEA1FBB66A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C01F9932AD9E3DF00542999 /* libEntrustIGMobileSDK.a */,
+				4C01F9952AD9E3F000542999 /* libEntrustIGMobileSDK.a */,
 				4C01F9752ACF5D7D00542999 /* libz.tbd */,
 				4C01F9732ACF5D7000542999 /* Security.framework */,
 				50ADFFA52020D75100D50D53 /* Capacitor.framework */,
@@ -559,6 +565,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Plugin/lib_iOS/$(CONFIGURATION)\"",
+					"$(PROJECT_DIR)/Plugin/lib_iOS/Debug",
+					"$(PROJECT_DIR)/Plugin/lib_iOS/Release",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
@@ -612,6 +620,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Plugin/lib_iOS/$(CONFIGURATION)\"",
+					"$(PROJECT_DIR)/Plugin/lib_iOS/Debug",
+					"$(PROJECT_DIR)/Plugin/lib_iOS/Release",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
