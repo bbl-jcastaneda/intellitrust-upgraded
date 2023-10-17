@@ -562,12 +562,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)\n$(FRAMEWORK_SEARCH_PATHS)\n$(FRAMEWORK_SEARCH_PATHS)";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Plugin/lib_iOS/$(CONFIGURATION)\"",
-					"$(PROJECT_DIR)/Plugin/lib_iOS/Debug",
-					"$(PROJECT_DIR)/Plugin/lib_iOS/Release",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Plugin/lib_iOS/$(CONFIGURATION)\"";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -617,12 +612,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Plugin/lib_iOS/$(CONFIGURATION)\"",
-					"$(PROJECT_DIR)/Plugin/lib_iOS/Debug",
-					"$(PROJECT_DIR)/Plugin/lib_iOS/Release",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Plugin/lib_iOS/$(CONFIGURATION)\"";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
