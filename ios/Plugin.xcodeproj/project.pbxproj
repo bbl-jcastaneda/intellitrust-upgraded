@@ -25,8 +25,8 @@
 		4C01F98A2ACF5E4300542999 /* ETIdentity.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C01F9802ACF5E4300542999 /* ETIdentity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C01F98D2ACF6B8C00542999 /* ETSoftTokenSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C01F98C2ACF6B8C00542999 /* ETSoftTokenSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C01F9922AD9E19A00542999 /* lib_iOS in Resources */ = {isa = PBXBuildFile; fileRef = 4C01F9912AD9E19A00542999 /* lib_iOS */; };
-		4C01F9942AD9E3DF00542999 /* libEntrustIGMobileSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01F9932AD9E3DF00542999 /* libEntrustIGMobileSDK.a */; };
 		4C01F9962AD9E3F000542999 /* libEntrustIGMobileSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01F9952AD9E3F000542999 /* libEntrustIGMobileSDK.a */; };
+		4C01FA552AF03C2400542999 /* BridgingHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C01F98E2ACF6CA100542999 /* BridgingHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50ADFF92201F53D600D50D53 /* Plugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50ADFF88201F53D600D50D53 /* Plugin.framework */; };
 		50ADFF97201F53D600D50D53 /* IntellitrustTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFF96201F53D600D50D53 /* IntellitrustTests.swift */; };
 		50ADFF99201F53D600D50D53 /* IntellitrustPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ADFF8B201F53D600D50D53 /* IntellitrustPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -89,10 +89,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C01F9962AD9E3F000542999 /* libEntrustIGMobileSDK.a in Frameworks */,
-				4C01F9942AD9E3DF00542999 /* libEntrustIGMobileSDK.a in Frameworks */,
+				50ADFFA42020D75100D50D53 /* Capacitor.framework in Frameworks */,
 				4C01F9762ACF5D7D00542999 /* libz.tbd in Frameworks */,
 				4C01F9742ACF5D7000542999 /* Security.framework in Frameworks */,
-				50ADFFA42020D75100D50D53 /* Capacitor.framework in Frameworks */,
 				03FC29A292ACC40490383A1F /* Pods_Plugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +196,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C01FA552AF03C2400542999 /* BridgingHeader.h in Headers */,
 				50ADFF99201F53D600D50D53 /* IntellitrustPlugin.h in Headers */,
 				4C01F9812ACF5E4300542999 /* ETDataTypes.h in Headers */,
 				4C01F9822ACF5E4300542999 /* ETErrorDomainConstants.h in Headers */,
@@ -547,6 +547,7 @@
 					"$(ARCHS_STANDARD)",
 					x86_64,
 				);
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -597,6 +598,7 @@
 					"$(ARCHS_STANDARD)",
 					x86_64,
 				);
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
