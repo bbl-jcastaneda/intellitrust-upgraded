@@ -10,8 +10,7 @@
 		03FC29A292ACC40490383A1F /* Pods_Plugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2A61DA5A1F2DD4F959604D /* Pods_Plugin.framework */; };
 		20C0B05DCFC8E3958A738AF2 /* Pods_PluginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6753A823D3815DB436415E3 /* Pods_PluginTests.framework */; };
 		2F98D68224C9AAE500613A4C /* Intellitrust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F98D68124C9AAE400613A4C /* Intellitrust.swift */; };
-		4C01F9582ACF5B2200542999 /* lib_iOS in Resources */ = {isa = PBXBuildFile; fileRef = 4C01F9572ACF5B2200542999 /* lib_iOS */; };
-		4C01F95A2ACF5B2B00542999 /* libEntrustIGMobileSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01F9592ACF5B2B00542999 /* libEntrustIGMobileSDK.a */; };
+		4C01F9582ACF5B2200542999 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		4C01F9742ACF5D7000542999 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01F9732ACF5D7000542999 /* Security.framework */; };
 		4C01F9762ACF5D7D00542999 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01F9752ACF5D7D00542999 /* libz.tbd */; };
 		4C01F9812ACF5E4300542999 /* ETDataTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C01F9772ACF5E4300542999 /* ETDataTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,7 +24,6 @@
 		4C01F9892ACF5E4300542999 /* ETTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C01F97F2ACF5E4300542999 /* ETTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C01F98A2ACF5E4300542999 /* ETIdentity.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C01F9802ACF5E4300542999 /* ETIdentity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C01F98D2ACF6B8C00542999 /* ETSoftTokenSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C01F98C2ACF6B8C00542999 /* ETSoftTokenSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C01F9922AD9E19A00542999 /* lib_iOS in Resources */ = {isa = PBXBuildFile; fileRef = 4C01F9912AD9E19A00542999 /* lib_iOS */; };
 		4C01F9962AD9E3F000542999 /* libEntrustIGMobileSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01F9952AD9E3F000542999 /* libEntrustIGMobileSDK.a */; };
 		4C01FA552AF03C2400542999 /* BridgingHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C01F98E2ACF6CA100542999 /* BridgingHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50ADFF92201F53D600D50D53 /* Plugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50ADFF88201F53D600D50D53 /* Plugin.framework */; };
@@ -34,6 +32,18 @@
 		50ADFFA42020D75100D50D53 /* Capacitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50ADFFA52020D75100D50D53 /* Capacitor.framework */; };
 		50ADFFA82020EE4F00D50D53 /* IntellitrustPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFFA72020EE4F00D50D53 /* IntellitrustPlugin.m */; };
 		50E1A94820377CB70090CE1A /* IntellitrustPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E1A94720377CB70090CE1A /* IntellitrustPlugin.swift */; };
+		A2F52F1C2AF42F47005A779D /* BridgingHeader.h in Resources */ = {isa = PBXBuildFile; fileRef = 4C01F98E2ACF6CA100542999 /* BridgingHeader.h */; };
+		A2F52F1D2AF42F47005A779D /* ETSoftTokenSDK.h in Resources */ = {isa = PBXBuildFile; fileRef = 4C01F98C2ACF6B8C00542999 /* ETSoftTokenSDK.h */; };
+		A2F52F1E2AF42F47005A779D /* ETCommCallback.h in Resources */ = {isa = PBXBuildFile; fileRef = 4C01F97B2ACF5E4300542999 /* ETCommCallback.h */; };
+		A2F52F1F2AF42F47005A779D /* ETConfigurationFile.h in Resources */ = {isa = PBXBuildFile; fileRef = 4C01F97A2ACF5E4300542999 /* ETConfigurationFile.h */; };
+		A2F52F202AF42F47005A779D /* ETDataTypes.h in Resources */ = {isa = PBXBuildFile; fileRef = 4C01F9772ACF5E4300542999 /* ETDataTypes.h */; };
+		A2F52F212AF42F47005A779D /* ETErrorDomainConstants.h in Resources */ = {isa = PBXBuildFile; fileRef = 4C01F9782ACF5E4300542999 /* ETErrorDomainConstants.h */; };
+		A2F52F222AF42F47005A779D /* ETIdentity.h in Resources */ = {isa = PBXBuildFile; fileRef = 4C01F9802ACF5E4300542999 /* ETIdentity.h */; };
+		A2F52F232AF42F47005A779D /* ETIdentityProvider.h in Resources */ = {isa = PBXBuildFile; fileRef = 4C01F9792ACF5E4300542999 /* ETIdentityProvider.h */; };
+		A2F52F242AF42F47005A779D /* ETLaunchUrlParams.h in Resources */ = {isa = PBXBuildFile; fileRef = 4C01F97C2ACF5E4300542999 /* ETLaunchUrlParams.h */; };
+		A2F52F252AF42F47005A779D /* ETLogger.h in Resources */ = {isa = PBXBuildFile; fileRef = 4C01F97E2ACF5E4300542999 /* ETLogger.h */; };
+		A2F52F262AF42F47005A779D /* ETNotificationParams.h in Resources */ = {isa = PBXBuildFile; fileRef = 4C01F97D2ACF5E4300542999 /* ETNotificationParams.h */; };
+		A2F52F272AF42F47005A779D /* ETTransaction.h in Resources */ = {isa = PBXBuildFile; fileRef = 4C01F97F2ACF5E4300542999 /* ETTransaction.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,7 +134,6 @@
 				4C01F97E2ACF5E4300542999 /* ETLogger.h */,
 				4C01F97D2ACF5E4300542999 /* ETNotificationParams.h */,
 				4C01F97F2ACF5E4300542999 /* ETTransaction.h */,
-				4C01F9572ACF5B2200542999 /* lib_iOS */,
 				50ADFF8A201F53D600D50D53 /* Plugin */,
 				50ADFF95201F53D600D50D53 /* PluginTests */,
 				50ADFF89201F53D600D50D53 /* Products */,
@@ -300,7 +309,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C01F9582ACF5B2200542999 /* lib_iOS in Resources */,
+				A2F52F1C2AF42F47005A779D /* BridgingHeader.h in Resources */,
+				A2F52F1D2AF42F47005A779D /* ETSoftTokenSDK.h in Resources */,
+				A2F52F1E2AF42F47005A779D /* ETCommCallback.h in Resources */,
+				A2F52F1F2AF42F47005A779D /* ETConfigurationFile.h in Resources */,
+				A2F52F202AF42F47005A779D /* ETDataTypes.h in Resources */,
+				A2F52F212AF42F47005A779D /* ETErrorDomainConstants.h in Resources */,
+				A2F52F222AF42F47005A779D /* ETIdentity.h in Resources */,
+				A2F52F232AF42F47005A779D /* ETIdentityProvider.h in Resources */,
+				A2F52F242AF42F47005A779D /* ETLaunchUrlParams.h in Resources */,
+				A2F52F252AF42F47005A779D /* ETLogger.h in Resources */,
+				A2F52F262AF42F47005A779D /* ETNotificationParams.h in Resources */,
+				A2F52F272AF42F47005A779D /* ETTransaction.h in Resources */,
+				4C01F9582ACF5B2200542999 /* (null) in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,7 +585,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)\n$(FRAMEWORK_SEARCH_PATHS)\n$(FRAMEWORK_SEARCH_PATHS)";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Plugin/lib_iOS/$(CONFIGURATION)\"";
+				LIBRARY_SEARCH_PATHS = "\"$(PROJECT_DIR)/Plugin/lib_iOS/$(CONFIGURATION)\"";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -615,7 +636,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Plugin/lib_iOS/$(CONFIGURATION)\"";
+				LIBRARY_SEARCH_PATHS = "\"$(PROJECT_DIR)/Plugin/lib_iOS/$(CONFIGURATION)\"";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
